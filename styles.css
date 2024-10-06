@@ -376,6 +376,20 @@ h1, h2 {
     }
 }
 
+/* Aplica la animación */
+/* Estado inicial oculto */
+.seccion-animada {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+/* Estado visible (cuando la sección entra en la vista) */
+.seccion-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 @keyframes hoverEffect {
     from {
         transform: scale(1);
