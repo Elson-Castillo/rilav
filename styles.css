@@ -399,6 +399,23 @@ h1, h2 {
     }
 }
 
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Aplica la animación al texto de forma infinita */
+.texto-deslizante {
+    animation: slideIn 2s ease-in-out infinite alternate; /* Repetir indefinidamente con ida y vuelta */
+}
+
 /* Footer */
 footer {
     background-color: #333;
