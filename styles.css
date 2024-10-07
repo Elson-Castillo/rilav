@@ -416,6 +416,20 @@ h1, h2 {
     animation: slideIn 2s ease-in-out infinite alternate; /* Repetir indefinidamente con ida y vuelta */
 }
 
+.imagen-responsiva {
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.imagen-centrada {
+    display: inline-block; /* Asegura que la imagen sea tratada como bloque en línea */
+}
+
+@media (min-width: 768px) {
+    .imagen-centrada {
+        width: 50%; /* La imagen ocupará el 50% del ancho en pantallas grandes */
+    }
+}
+
 /* Footer */
 footer {
     background-color: #333;
